@@ -3,35 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item android:title="Détecter votre activité"></item>
+
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_fingerprint"
+            android:title="Coordonnées et activité" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_add_alert"
+            android:title="Numéro d'urgence" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_detect"
+            android:icon="@drawable/ic_directions_run"
+            android:title="Detection de mouvement" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Diffuser largement">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Partager" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_join"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Nous rejoindre" />
         </menu>
     </item>
 

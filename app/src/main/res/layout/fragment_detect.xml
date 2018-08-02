@@ -21,11 +21,17 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
+        <Switch
+            android:id="@+id/switch_detect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="detecteur activité"
+            android:gravity="left"/> <!--displayed text of switch-->
 
 
         <TextView
-            android:id="@+id/gravity_text"
+            android:id="@+id/time_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -33,12 +39,12 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="gravity text"
+            android:text="time text"
             />
 
         <TextView
-            android:id="@+id/speed_text"
-            android:text="speed_text"
+            android:id="@+id/Grun_text"
+            android:text="grun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -50,8 +56,8 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/moving_text"
-            android:text="moving_text"
+            android:id="@+id/Gchange_text"
+            android:text="gchange"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

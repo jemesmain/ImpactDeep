@@ -5,10 +5,255 @@
     android:layout_height="match_parent"
     tools:context=".Fragment_home">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
+        android:id="@+id/home_ScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fragment_home_vide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="Instructions:"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_menu"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_menu"/>
+                <TextView
+                    android:id="@+id/fragment_home_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+
+                    android:text="Menu: choix d'un des éléments de l'appli"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_fingerprint"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_fingerprint"/>
+                <TextView
+                    android:id="@+id/fragment_home_fingerprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="1 Coordonnées: édition de votre profil"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_phone"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_add_alert"/>
+                <TextView
+                    android:id="@+id/fragment_home_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="2 Numéro d'urgence: personne à contacter"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_run"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_directions_run"/>
+                <TextView
+                    android:id="@+id/fragment_home_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="3 Detection d'activité"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="Partage / nous rejoindre"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_share"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_menu_share"/>
+                <TextView
+                    android:id="@+id/fragment_home_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="Partager: partager l'application"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_join"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_menu_send"/>
+                <TextView
+                    android:id="@+id/fragment_home_join"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="Work in progress"/>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btn_home_more_vert"
+                    android:layout_marginTop="18dp"
+                    android:layout_width="@dimen/button_margin"
+                    android:layout_height="@dimen/button_margin"
+                    android:layout_centerInParent="true"
+                    android:layout_below="@+id/edit_profil_phone"
+                    android:background = "@drawable/roundedbutton"
+                    android:src="@drawable/ic_more_vert"/>
+                <TextView
+                    android:id="@+id/fragment_home_more_vert"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text="Instruction: revenir aux instructions"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:layout_margin="15px"
+                    android:gravity="center_vertical"
+                    android:text=""/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </FrameLayout>

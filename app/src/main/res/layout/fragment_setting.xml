@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment_setting"
+    tools:context=".Fragment_phone"
 
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
@@ -33,8 +33,22 @@
                 android:id="@+id/section_setting"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Merci de renseigner vos paramètres:" />
-
+                android:text="Merci de renseigner les numéros de vos contacts:" />
+            <ImageButton
+                android:id="@+id/button_emergency1"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/button_margin"
+                android:layout_height="@dimen/button_margin"
+                android:background = "@drawable/roundedbutton"
+                android:src="@drawable/ic_contact_phone"
+                android:text="Get emergency contact1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
             <EditText
                 android:id="@+id/editNumber1"
                 android:layout_width="match_parent"
@@ -44,6 +58,23 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/button_emergency2"
+
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/button_margin"
+                android:layout_height="@dimen/button_margin"
+                android:background = "@drawable/roundedbutton"
+                android:src="@drawable/ic_contact_phone"
+                android:text="Get emergency contact2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
             <EditText
                 android:id="@+id/editNumber2"
                 android:layout_width="match_parent"
@@ -53,6 +84,23 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/button_emergency3"
+
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/button_margin"
+                android:layout_height="@dimen/button_margin"
+                android:background = "@drawable/roundedbutton"
+                android:src="@drawable/ic_contact_phone"
+                android:text="Get emergency contact3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058" />
+
             <EditText
                 android:id="@+id/editNumber3"
                 android:layout_width="match_parent"
@@ -63,41 +111,16 @@
                 app:layout_constraintRight_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/editName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"
-                android:inputType="textCapSentences|textAutoCorrect"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/editSport"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Activity (Trail / Bike / Paragliding...)"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/phone_save"
 
-            <EditText
-                android:id="@+id/editGravity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Gravity Threshold (G times)"
-                android:inputType="numberDecimal"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/button_save"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/button_margin"
+                android:layout_height="@dimen/button_margin"
+                android:background = "@drawable/roundedbutton"
+                android:src="@drawable/ic_save"
                 android:text="Save settings"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -106,58 +129,9 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.058" />
 
-            <Button
-                android:id="@+id/button_get"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
 
-                android:text="Get settings"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058" />
-            <Button
-                android:id="@+id/button_emergency1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
 
-                android:text="Get emergency contact1"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058" />
-            <Button
-                android:id="@+id/button_emergency2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
 
-                android:text="Get emergency contact2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058" />
-            <Button
-                android:id="@+id/button_emergency3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-
-                android:text="Get emergency contact3"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058" />
 
         </LinearLayout>
 
